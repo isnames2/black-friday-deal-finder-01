@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHound — Black Friday Deal Finder 2026</title>
+<meta name="description" content="33 real Black Friday and Cyber Monday deals, every price checked Nov 27, 2026, with an honest verdict on each.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23f5b942'/%3E%3Ctext x='8' y='12' font-size='11' font-weight='bold' text-anchor='middle' fill='%23241a05'%3E$%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Black Friday &middot; Nov 27 &ndash; Cyber Monday &middot; Nov 30, 2026</p>
+    <h1>Deal<span class="gold">Hound</span></h1>
+    <p class="lede">Sniffing out the real Black Friday bargains. Every deal below was found
+      and checked on Nov 27, 2026 &mdash; sale price, usual price, store and source
+      on each card, plus an honest verdict: a new low, a strong price, or just a
+      routine sale.</p>
+    <ul class="stats">
+      <li><strong id="stat-deals">33</strong> deals</li>
+      <li><strong id="stat-stores">6</strong> stores</li>
+      <li><strong id="stat-avg">&ndash;</strong> average discount</li>
+      <li>Biggest saving: <strong id="stat-biggest">&ndash;</strong></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Search and filter deals">
+    <input type="search" id="search" placeholder="Search deals, stores, categories&hellip;" aria-label="Search deals">
+    <label>Store
+      <select id="store-filter" aria-label="Filter by store">
+        <option value="All">All stores</option>
+      </select>
+    </label>
+    <label>Discount
+      <select id="discount-filter" aria-label="Filter by discount">
+        <option value="0">Any discount</option>
+        <option value="20">20% off or more</option>
+        <option value="40">40% off or more</option>
+        <option value="50">50% off or more</option>
+      </select>
+    </label>
+    <label>Verdict
+      <select id="verdict-filter" aria-label="Filter by verdict">
+        <option value="All">Any verdict</option>
+        <option value="new-low">New low</option>
+        <option value="strong">Strong price</option>
+        <option value="routine">Routine sale</option>
+      </select>
+    </label>
+    <label>Sort
+      <select id="sort" aria-label="Sort deals">
+        <option value="discount">Biggest discount</option>
+        <option value="saving">Biggest saving</option>
+        <option value="price">Lowest price</option>
+        <option value="newlow">New lows first</option>
+      </select>
+    </label>
+    <button type="button" class="reset" id="reset">Reset</button>
+  </section>
+
+  <div class="chips" id="category-chips" aria-label="Filter by category"></div>
+
+  <p id="result-count">Showing all 33 deals</p>
+  <div class="grid" id="deal-grid"></div>
+  <p id="empty-note" hidden>No deals match those filters. Try clearing the search or loosening a filter.</p>
+</main>
+
+<footer class="method">
+  <h2>How these deals were checked</h2>
+  <p>Every price on this page was read on Nov 27, 2026, at the named store or in
+    a deals roundup that names the store (Benzinga, Mashable, Tom&rsquo;s Guide,
+    9to5Toys, Clark Deals, Yahoo Shopping, and the stores&rsquo; own Black Friday
+    pages). The discount on each card is computed from the two prices shown, so
+    it always adds up. Prices change fast on Black Friday &mdash; the store link
+    on each card is the place to confirm the price before you buy. DealHound
+    takes no payment from any store and lists no sponsored placement.</p>
+</footer>
+</body>
+</html>
